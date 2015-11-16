@@ -1,0 +1,16 @@
+adiv, div {
+  width: 50%; }
+
+div {
+  color: red; }
+
+.wrap p {
+  color: red; }
+
+.wrap span {
+  display: block; }
+
+div > div {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px; }
