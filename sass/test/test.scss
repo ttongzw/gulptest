@@ -1,0 +1,18 @@
+$cr: red; //变量
+adiv{
+  width:50%;
+  }
+  
+div{
+  @extend adiv;  //继承
+  color:$cr; //变量
+  }
+  
+.wrap{ //层叠
+  p{
+    color:red;
+  }
+  span{
+    display:block;
+  }
+}
