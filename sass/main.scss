@@ -1,0 +1,28 @@
+$cr: red; //变量
+adiv{
+  width:60%;
+  }
+  
+div{
+  @extend adiv;  //继承
+  color:$cr; //变量
+  }
+  
+.wrap{ //层叠
+  p{
+    color:red;
+  }
+  span{
+    display:block;
+  }
+}
+
+
+@mixin border-radius($num:10px){ //模板，括号中的变量必须以$开头
+  -webkit-border-radius:$num;
+  -moz-border-radius:$num;
+  border-radius:$num;
+}
+div>div{
+  @include border-radius();
+}
